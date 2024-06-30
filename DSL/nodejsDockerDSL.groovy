@@ -14,7 +14,7 @@ job('AplicacionNode.jsDockerDSL') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('josebaezae/nodejsapp2')
+            repositoryName('josebaezae/nodejsapp3')
             tag('${GIT_REVISION,length=7}')
             registryCredentials('docker-hub')
             forcePull(false)
